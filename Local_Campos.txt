@@ -1,0 +1,8 @@
+CNPJ: Localizado em <b>47.113.767/0001-90</b>.
+Razão Social (NOME EMPRESARIAL): Localizado em <b>47.113.767 IRANIR ANDRADE DA SILVA</b>.
+Rua (LOGRADOURO): Localizado em <b>ROD BR-116</b>.
+Número: Localizado em <b>15480</b>.
+CEP: Localizado em <b>81.690-200</b>.
+Bairro: Localizado em <b>XAXIM</b>.
+Email (ENDEREÇO ELETRÔNICO): Localizado em <b>IRANIR-SILVA@OUTLOOK.COM</b>.
+Telefone: Localizado em <b>(41) 9523-6635</b>.
