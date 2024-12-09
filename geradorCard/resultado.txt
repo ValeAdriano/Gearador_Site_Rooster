@@ -1,100 +1,100 @@
-11.602.768/0001-51;Empresa 1 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;4721;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
-96.171.785/0001-34;Empresa 2 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;5133;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
-61.413.202/0001-50;Empresa 3 Comércio e Serviços LTDA;Rua Mateus Leme;9877;80510-190;São Francisco;luankaseckert@gmail.com;(41) 8887-5384
-15.561.722/0001-92;Empresa 4 Comércio e Serviços LTDA;Rua General Carneiro;7301;80060-150;Alto da Glória;luankasetima@gmail.com;(41) 8887-5384
-63.611.495/0001-05;Empresa 5 Comércio e Serviços LTDA;Rua General Carneiro;2496;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
-11.419.480/0001-46;Empresa 6 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;6685;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
-87.579.213/0001-06;Empresa 7 Comércio e Serviços LTDA;Rua Emiliano Perneta;3872;80420-080;Centro;luankaseckert@gmail.com;(41) 8887-5384
-31.136.596/0001-85;Empresa 8 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;9238;80010-100;Centro;luankasetima@gmail.com;(41) 8887-5384
-98.592.713/0001-96;Empresa 9 Comércio e Serviços LTDA;Rua General Carneiro;5630;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 9749-4298
-52.159.864/0001-54;Empresa 10 Comércio e Serviços LTDA;Rua General Carneiro;5341;80060-150;Alto da Glória;luankasetima@gmail.com;(41) 9749-4298
-29.203.132/0001-00;Empresa 11 Comércio e Serviços LTDA;Avenida Iguaçu;4239;80230-020;Água Verde;luankaseckert@gmail.com;(41) 8887-5384
-94.256.568/0001-11;Empresa 12 Comércio e Serviços LTDA;Rua Augusto Stresser;2214;80260-000;Juvevê;luankasetima@gmail.com;(41) 8887-5384
-11.727.758/0001-42;Empresa 13 Comércio e Serviços LTDA;Avenida Iguaçu;6230;80230-020;Água Verde;luankaseckert@gmail.com;(41) 9749-4298
-83.885.349/0001-85;Empresa 14 Comércio e Serviços LTDA;Avenida República Argentina;4107;80620-010;Portão;luankasetima@gmail.com;(41) 9749-4298
-10.723.014/0001-97;Empresa 15 Comércio e Serviços LTDA;Rua Augusto Stresser;98;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
-42.067.208/0001-78;Empresa 16 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;9036;80010-100;Centro;luankasetima@gmail.com;(41) 8887-5384
-95.285.218/0001-46;Empresa 17 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;3530;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
-72.380.183/0001-29;Empresa 18 Comércio e Serviços LTDA;Rua Augusto Stresser;7502;80260-000;Juvevê;luankasetima@gmail.com;(41) 8887-5384
-14.700.920/0001-27;Empresa 19 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;3618;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
-63.625.421/0001-28;Empresa 20 Comércio e Serviços LTDA;Avenida República Argentina;6939;80620-010;Portão;luankasetima@gmail.com;(41) 8887-5384
-90.570.524/0001-00;Empresa 21 Comércio e Serviços LTDA;Rua Comendador Araújo;4033;80420-000;Centro;luankaseckert@gmail.com;(41) 8887-5384
-66.409.389/0001-31;Empresa 22 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;1725;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
-99.451.112/0001-26;Empresa 23 Comércio e Serviços LTDA;Rua Emiliano Perneta;5324;80420-080;Centro;luankaseckert@gmail.com;(41) 9749-4298
-97.475.181/0001-44;Empresa 24 Comércio e Serviços LTDA;Avenida Iguaçu;5463;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
-71.476.964/0001-59;Empresa 25 Comércio e Serviços LTDA;Rua Comendador Araújo;1065;80420-000;Centro;luankaseckert@gmail.com;(41) 8887-5384
-92.719.646/0001-41;Empresa 26 Comércio e Serviços LTDA;Rua Marechal Deodoro;8394;80010-010;Centro;luankasetima@gmail.com;(41) 8887-5384
-90.483.017/0001-30;Empresa 27 Comércio e Serviços LTDA;Avenida República Argentina;233;80620-010;Portão;luankaseckert@gmail.com;(41) 9749-4298
-33.507.699/0001-30;Empresa 28 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;7365;81200-100;Mossunguê;luankasetima@gmail.com;(41) 9749-4298
-38.798.943/0001-84;Empresa 29 Comércio e Serviços LTDA;Rua General Carneiro;9400;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 9749-4298
-21.184.954/0001-71;Empresa 30 Comércio e Serviços LTDA;Avenida República Argentina;9145;80620-010;Portão;luankasetima@gmail.com;(41) 9749-4298
-95.569.416/0001-31;Empresa 31 Comércio e Serviços LTDA;Avenida Iguaçu;1527;80230-020;Água Verde;luankaseckert@gmail.com;(41) 9749-4298
-04.049.734/0001-16;Empresa 32 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;9179;80010-100;Centro;luankasetima@gmail.com;(41) 8887-5384
-44.288.903/0001-95;Empresa 33 Comércio e Serviços LTDA;Rua Mateus Leme;6955;80510-190;São Francisco;luankaseckert@gmail.com;(41) 8887-5384
-85.588.228/0001-05;Empresa 34 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;4999;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
-92.816.413/0001-67;Empresa 35 Comércio e Serviços LTDA;Avenida Iguaçu;2479;80230-020;Água Verde;luankaseckert@gmail.com;(41) 8887-5384
-55.106.289/0001-10;Empresa 36 Comércio e Serviços LTDA;Rua Mateus Leme;5636;80510-190;São Francisco;luankasetima@gmail.com;(41) 8887-5384
-30.508.506/0001-77;Empresa 37 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;1249;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 9749-4298
-19.056.739/0001-43;Empresa 38 Comércio e Serviços LTDA;Rua General Carneiro;7023;80060-150;Alto da Glória;luankasetima@gmail.com;(41) 9749-4298
-03.937.690/0001-06;Empresa 39 Comércio e Serviços LTDA;Rua Augusto Stresser;5753;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
-54.901.722/0001-46;Empresa 40 Comércio e Serviços LTDA;Rua Mateus Leme;1411;80510-190;São Francisco;luankasetima@gmail.com;(41) 8887-5384
-78.086.899/0001-02;Empresa 41 Comércio e Serviços LTDA;Rua Comendador Araújo;270;80420-000;Centro;luankaseckert@gmail.com;(41) 8887-5384
-81.493.162/0001-00;Empresa 42 Comércio e Serviços LTDA;Rua Marechal Deodoro;4675;80010-010;Centro;luankasetima@gmail.com;(41) 9749-4298
-01.573.796/0001-34;Empresa 43 Comércio e Serviços LTDA;Rua Comendador Araújo;1656;80420-000;Centro;luankaseckert@gmail.com;(41) 9749-4298
-90.518.563/0001-69;Empresa 44 Comércio e Serviços LTDA;Rua Mateus Leme;8490;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
-41.059.740/0001-80;Empresa 45 Comércio e Serviços LTDA;Rua Emiliano Perneta;5605;80420-080;Centro;luankaseckert@gmail.com;(41) 9749-4298
-33.891.416/0001-04;Empresa 46 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;8209;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
-05.243.493/0001-04;Empresa 47 Comércio e Serviços LTDA;Avenida República Argentina;9808;80620-010;Portão;luankaseckert@gmail.com;(41) 9749-4298
-25.338.053/0001-48;Empresa 48 Comércio e Serviços LTDA;Avenida República Argentina;4873;80620-010;Portão;luankasetima@gmail.com;(41) 8887-5384
-53.085.377/0001-57;Empresa 49 Comércio e Serviços LTDA;Rua Augusto Stresser;3619;80260-000;Juvevê;luankaseckert@gmail.com;(41) 9749-4298
-31.084.519/0001-29;Empresa 50 Comércio e Serviços LTDA;Rua Mateus Leme;5770;80510-190;São Francisco;luankasetima@gmail.com;(41) 8887-5384
-64.984.468/0001-40;Empresa 51 Comércio e Serviços LTDA;Avenida República Argentina;4374;80620-010;Portão;luankaseckert@gmail.com;(41) 8887-5384
-01.737.339/0001-38;Empresa 52 Comércio e Serviços LTDA;Avenida Iguaçu;3476;80230-020;Água Verde;luankasetima@gmail.com;(41) 8887-5384
-33.064.644/0001-00;Empresa 53 Comércio e Serviços LTDA;Rua General Carneiro;7489;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 9749-4298
-25.738.856/0001-90;Empresa 54 Comércio e Serviços LTDA;Rua Comendador Araújo;3411;80420-000;Centro;luankasetima@gmail.com;(41) 8887-5384
-45.972.391/0001-44;Empresa 55 Comércio e Serviços LTDA;Rua General Carneiro;8667;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
-43.460.755/0001-81;Empresa 56 Comércio e Serviços LTDA;Rua Emiliano Perneta;7646;80420-080;Centro;luankasetima@gmail.com;(41) 9749-4298
-00.074.557/0001-77;Empresa 57 Comércio e Serviços LTDA;Rua Augusto Stresser;1930;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
-59.282.924/0001-70;Empresa 58 Comércio e Serviços LTDA;Rua Augusto Stresser;6649;80260-000;Juvevê;luankasetima@gmail.com;(41) 9749-4298
-21.508.400/0001-82;Empresa 59 Comércio e Serviços LTDA;Avenida República Argentina;847;80620-010;Portão;luankaseckert@gmail.com;(41) 8887-5384
-73.751.789/0001-96;Empresa 60 Comércio e Serviços LTDA;Rua Marechal Deodoro;9361;80010-010;Centro;luankasetima@gmail.com;(41) 8887-5384
-78.995.911/0001-93;Empresa 61 Comércio e Serviços LTDA;Rua Augusto Stresser;230;80260-000;Juvevê;luankaseckert@gmail.com;(41) 9749-4298
-51.979.224/0001-28;Empresa 62 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;9294;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
-06.768.748/0001-15;Empresa 63 Comércio e Serviços LTDA;Rua Marechal Deodoro;9901;80010-010;Centro;luankaseckert@gmail.com;(41) 8887-5384
-09.597.606/0001-20;Empresa 64 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;3820;81200-100;Mossunguê;luankasetima@gmail.com;(41) 8887-5384
-68.958.958/0001-23;Empresa 65 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;2332;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 8887-5384
-73.033.554/0001-69;Empresa 66 Comércio e Serviços LTDA;Avenida Iguaçu;3754;80230-020;Água Verde;luankasetima@gmail.com;(41) 8887-5384
-82.536.223/0001-32;Empresa 67 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;903;80010-100;Centro;luankaseckert@gmail.com;(41) 8887-5384
-23.233.061/0001-02;Empresa 68 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;7703;81200-100;Mossunguê;luankasetima@gmail.com;(41) 9749-4298
-87.308.158/0001-01;Empresa 69 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;2598;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 9749-4298
-36.240.894/0001-34;Empresa 70 Comércio e Serviços LTDA;Rua Mateus Leme;9180;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
-25.348.142/0001-75;Empresa 71 Comércio e Serviços LTDA;Rua Augusto Stresser;2362;80260-000;Juvevê;luankaseckert@gmail.com;(41) 9749-4298
-04.883.774/0001-69;Empresa 72 Comércio e Serviços LTDA;Rua Comendador Araújo;2586;80420-000;Centro;luankasetima@gmail.com;(41) 9749-4298
-99.781.875/0001-35;Empresa 73 Comércio e Serviços LTDA;Avenida República Argentina;5798;80620-010;Portão;luankaseckert@gmail.com;(41) 9749-4298
-86.573.931/0001-02;Empresa 74 Comércio e Serviços LTDA;Rua Comendador Araújo;8693;80420-000;Centro;luankasetima@gmail.com;(41) 8887-5384
-47.270.651/0001-65;Empresa 75 Comércio e Serviços LTDA;Avenida Iguaçu;4859;80230-020;Água Verde;luankaseckert@gmail.com;(41) 8887-5384
-34.907.415/0001-65;Empresa 76 Comércio e Serviços LTDA;Rua Marechal Deodoro;2424;80010-010;Centro;luankasetima@gmail.com;(41) 9749-4298
-38.634.663/0001-30;Empresa 77 Comércio e Serviços LTDA;Rua Augusto Stresser;7656;80260-000;Juvevê;luankaseckert@gmail.com;(41) 9749-4298
-17.861.525/0001-14;Empresa 78 Comércio e Serviços LTDA;Rua Comendador Araújo;4173;80420-000;Centro;luankasetima@gmail.com;(41) 9749-4298
-76.538.716/0001-09;Empresa 79 Comércio e Serviços LTDA;Rua Augusto Stresser;634;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
-30.272.264/0001-65;Empresa 80 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;5336;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
-44.553.736/0001-62;Empresa 81 Comércio e Serviços LTDA;Rua Augusto Stresser;4040;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
-11.594.012/0001-08;Empresa 82 Comércio e Serviços LTDA;Rua General Carneiro;8547;80060-150;Alto da Glória;luankasetima@gmail.com;(41) 9749-4298
-27.506.411/0001-00;Empresa 83 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;818;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
-32.344.841/0001-02;Empresa 84 Comércio e Serviços LTDA;Rua General Carneiro;3884;80060-150;Alto da Glória;luankasetima@gmail.com;(41) 8887-5384
-96.777.542/0001-44;Empresa 85 Comércio e Serviços LTDA;Avenida Iguaçu;2137;80230-020;Água Verde;luankaseckert@gmail.com;(41) 9749-4298
-89.775.759/0001-50;Empresa 86 Comércio e Serviços LTDA;Avenida Iguaçu;5349;80230-020;Água Verde;luankasetima@gmail.com;(41) 8887-5384
-60.206.520/0001-87;Empresa 87 Comércio e Serviços LTDA;Rua Augusto Stresser;5853;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
-25.363.384/0001-38;Empresa 88 Comércio e Serviços LTDA;Rua Emiliano Perneta;8528;80420-080;Centro;luankasetima@gmail.com;(41) 9749-4298
-49.623.580/0001-62;Empresa 89 Comércio e Serviços LTDA;Avenida República Argentina;1005;80620-010;Portão;luankaseckert@gmail.com;(41) 9749-4298
-95.289.511/0001-81;Empresa 90 Comércio e Serviços LTDA;Avenida Iguaçu;2348;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
-64.392.272/0001-67;Empresa 91 Comércio e Serviços LTDA;Avenida Iguaçu;9621;80230-020;Água Verde;luankaseckert@gmail.com;(41) 9749-4298
-05.332.050/0001-90;Empresa 92 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;6913;81200-100;Mossunguê;luankasetima@gmail.com;(41) 8887-5384
-20.080.485/0001-88;Empresa 93 Comércio e Serviços LTDA;Rua General Carneiro;5193;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
-63.853.927/0001-94;Empresa 94 Comércio e Serviços LTDA;Rua Comendador Araújo;3617;80420-000;Centro;luankasetima@gmail.com;(41) 8887-5384
-23.710.339/0001-87;Empresa 95 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;1364;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
-49.583.795/0001-05;Empresa 96 Comércio e Serviços LTDA;Avenida Iguaçu;9326;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
-89.908.016/0001-00;Empresa 97 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;588;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
-91.635.938/0001-33;Empresa 98 Comércio e Serviços LTDA;Rua General Carneiro;3910;80060-150;Alto da Glória;luankasetima@gmail.com;(41) 9749-4298
-32.234.772/0001-84;Empresa 99 Comércio e Serviços LTDA;Rua Comendador Araújo;7347;80420-000;Centro;luankaseckert@gmail.com;(41) 8887-5384
-42.910.876/0001-15;Empresa 100 Comércio e Serviços LTDA;Avenida Iguaçu;3122;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
+68.672.504/0001-91;teste adriano 123;Avenida Visconde de Guarapuava;5016;80010-100;Centro;luankaseckert@gmail.com;(41) 8887-5384
+77.371.969/0001-01;Empresa 2 Comércio e Serviços LTDA;Avenida Iguaçu;7693;80230-020;Água Verde;luankasetima@gmail.com;(41) 8887-5384
+41.793.515/0001-73;Empresa 3 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;4501;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
+88.040.223/0001-23;Empresa 4 Comércio e Serviços LTDA;Avenida República Argentina;7484;80620-010;Portão;luankasetima@gmail.com;(41) 8887-5384
+62.199.041/0001-06;Empresa 5 Comércio e Serviços LTDA;Rua Emiliano Perneta;234;80420-080;Centro;luankaseckert@gmail.com;(41) 8887-5384
+64.340.544/0001-85;Empresa 6 Comércio e Serviços LTDA;Rua Marechal Deodoro;8644;80010-010;Centro;luankasetima@gmail.com;(41) 8887-5384
+86.829.813/0001-04;Empresa 7 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;6369;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
+50.542.076/0001-17;Empresa 8 Comércio e Serviços LTDA;Rua Marechal Deodoro;796;80010-010;Centro;luankasetima@gmail.com;(41) 9749-4298
+08.986.620/0001-53;Empresa 9 Comércio e Serviços LTDA;Rua Emiliano Perneta;9419;80420-080;Centro;luankaseckert@gmail.com;(41) 8887-5384
+53.566.763/0001-60;Empresa 10 Comércio e Serviços LTDA;Rua Mateus Leme;8352;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
+64.708.981/0001-09;Empresa 11 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;574;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 9749-4298
+04.852.939/0001-35;Empresa 12 Comércio e Serviços LTDA;Avenida República Argentina;1929;80620-010;Portão;luankasetima@gmail.com;(41) 8887-5384
+52.986.562/0001-50;Empresa 13 Comércio e Serviços LTDA;Rua Mateus Leme;9142;80510-190;São Francisco;luankaseckert@gmail.com;(41) 9749-4298
+40.338.185/0001-63;Empresa 14 Comércio e Serviços LTDA;Avenida Iguaçu;2699;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
+29.084.588/0001-90;Empresa 15 Comércio e Serviços LTDA;Rua General Carneiro;5989;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 9749-4298
+87.741.913/0001-47;Empresa 16 Comércio e Serviços LTDA;Rua Comendador Araújo;8360;80420-000;Centro;luankasetima@gmail.com;(41) 9749-4298
+89.619.816/0001-01;Empresa 17 Comércio e Serviços LTDA;Rua Comendador Araújo;2111;80420-000;Centro;luankaseckert@gmail.com;(41) 9749-4298
+50.570.830/0001-22;Empresa 18 Comércio e Serviços LTDA;Rua Augusto Stresser;2731;80260-000;Juvevê;luankasetima@gmail.com;(41) 8887-5384
+67.623.817/0001-97;Empresa 19 Comércio e Serviços LTDA;Rua Emiliano Perneta;2039;80420-080;Centro;luankaseckert@gmail.com;(41) 9749-4298
+59.924.319/0001-56;Empresa 20 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;4712;81200-100;Mossunguê;luankasetima@gmail.com;(41) 8887-5384
+93.386.689/0001-15;Empresa 21 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;9292;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 8887-5384
+12.827.375/0001-09;Empresa 22 Comércio e Serviços LTDA;Rua Comendador Araújo;3796;80420-000;Centro;luankasetima@gmail.com;(41) 8887-5384
+20.322.315/0001-62;Empresa 23 Comércio e Serviços LTDA;Avenida Iguaçu;343;80230-020;Água Verde;luankaseckert@gmail.com;(41) 8887-5384
+50.090.700/0001-92;Empresa 24 Comércio e Serviços LTDA;Rua Marechal Deodoro;5511;80010-010;Centro;luankasetima@gmail.com;(41) 9749-4298
+58.234.305/0001-48;Empresa 25 Comércio e Serviços LTDA;Rua General Carneiro;2121;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
+60.978.574/0001-60;Empresa 26 Comércio e Serviços LTDA;Rua Marechal Deodoro;1778;80010-010;Centro;luankasetima@gmail.com;(41) 9749-4298
+89.856.619/0001-06;Empresa 27 Comércio e Serviços LTDA;Rua General Carneiro;454;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
+10.584.382/0001-00;Empresa 28 Comércio e Serviços LTDA;Rua Comendador Araújo;7626;80420-000;Centro;luankasetima@gmail.com;(41) 8887-5384
+33.388.083/0001-97;Empresa 29 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;1300;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 8887-5384
+51.332.862/0001-52;Empresa 30 Comércio e Serviços LTDA;Rua Augusto Stresser;6067;80260-000;Juvevê;luankasetima@gmail.com;(41) 9749-4298
+69.402.511/0001-36;Empresa 31 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;597;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 9749-4298
+41.355.984/0001-00;Empresa 32 Comércio e Serviços LTDA;Rua Comendador Araújo;5093;80420-000;Centro;luankasetima@gmail.com;(41) 9749-4298
+32.874.669/0001-07;Empresa 33 Comércio e Serviços LTDA;Rua Marechal Deodoro;988;80010-010;Centro;luankaseckert@gmail.com;(41) 8887-5384
+13.079.886/0001-52;Empresa 34 Comércio e Serviços LTDA;Avenida República Argentina;8472;80620-010;Portão;luankasetima@gmail.com;(41) 9749-4298
+03.275.468/0001-87;Empresa 35 Comércio e Serviços LTDA;Rua General Carneiro;9615;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 9749-4298
+28.256.492/0001-08;Empresa 36 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;6205;80010-100;Centro;luankasetima@gmail.com;(41) 8887-5384
+00.008.381/0001-55;Empresa 37 Comércio e Serviços LTDA;Avenida Iguaçu;8169;80230-020;Água Verde;luankaseckert@gmail.com;(41) 9749-4298
+31.711.150/0001-37;Empresa 38 Comércio e Serviços LTDA;Rua Mateus Leme;5754;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
+68.876.432/0001-02;Empresa 39 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;6897;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 9749-4298
+98.323.433/0001-82;Empresa 40 Comércio e Serviços LTDA;Rua Comendador Araújo;5642;80420-000;Centro;luankasetima@gmail.com;(41) 8887-5384
+74.156.608/0001-46;Empresa 41 Comércio e Serviços LTDA;Rua Mateus Leme;9759;80510-190;São Francisco;luankaseckert@gmail.com;(41) 8887-5384
+77.846.236/0001-78;Empresa 42 Comércio e Serviços LTDA;Avenida Iguaçu;9101;80230-020;Água Verde;luankasetima@gmail.com;(41) 8887-5384
+76.966.547/0001-08;Empresa 43 Comércio e Serviços LTDA;Avenida República Argentina;6083;80620-010;Portão;luankaseckert@gmail.com;(41) 9749-4298
+87.193.669/0001-25;Empresa 44 Comércio e Serviços LTDA;Rua Comendador Araújo;5083;80420-000;Centro;luankasetima@gmail.com;(41) 8887-5384
+28.633.050/0001-25;Empresa 45 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;3239;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
+59.487.935/0001-97;Empresa 46 Comércio e Serviços LTDA;Rua Emiliano Perneta;6580;80420-080;Centro;luankasetima@gmail.com;(41) 8887-5384
+24.727.882/0001-50;Empresa 47 Comércio e Serviços LTDA;Rua Comendador Araújo;3649;80420-000;Centro;luankaseckert@gmail.com;(41) 8887-5384
+26.694.268/0001-64;Empresa 48 Comércio e Serviços LTDA;Rua Mateus Leme;6442;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
+44.623.804/0001-12;Empresa 49 Comércio e Serviços LTDA;Avenida República Argentina;8403;80620-010;Portão;luankaseckert@gmail.com;(41) 8887-5384
+75.400.825/0001-00;Empresa 50 Comércio e Serviços LTDA;Rua Augusto Stresser;7445;80260-000;Juvevê;luankasetima@gmail.com;(41) 9749-4298
+27.604.476/0001-98;Empresa 51 Comércio e Serviços LTDA;Rua Marechal Deodoro;4645;80010-010;Centro;luankaseckert@gmail.com;(41) 9749-4298
+17.594.067/0001-02;Empresa 52 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;6305;80010-100;Centro;luankasetima@gmail.com;(41) 8887-5384
+42.582.449/0001-55;Empresa 53 Comércio e Serviços LTDA;Rua Augusto Stresser;2479;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
+90.886.853/0001-65;Empresa 54 Comércio e Serviços LTDA;Avenida Iguaçu;7973;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
+76.772.758/0001-00;Empresa 55 Comércio e Serviços LTDA;Rua Marechal Deodoro;2892;80010-010;Centro;luankaseckert@gmail.com;(41) 8887-5384
+66.593.469/0001-90;Empresa 56 Comércio e Serviços LTDA;Rua Augusto Stresser;7671;80260-000;Juvevê;luankasetima@gmail.com;(41) 9749-4298
+66.148.538/0001-56;Empresa 57 Comércio e Serviços LTDA;Rua Marechal Deodoro;7628;80010-010;Centro;luankaseckert@gmail.com;(41) 9749-4298
+16.451.979/0001-54;Empresa 58 Comércio e Serviços LTDA;Avenida Iguaçu;5725;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
+38.746.252/0001-37;Empresa 59 Comércio e Serviços LTDA;Rua Emiliano Perneta;1465;80420-080;Centro;luankaseckert@gmail.com;(41) 8887-5384
+96.648.927/0001-01;Empresa 60 Comércio e Serviços LTDA;Avenida República Argentina;6954;80620-010;Portão;luankasetima@gmail.com;(41) 9749-4298
+23.098.753/0001-87;Empresa 61 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;2931;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 8887-5384
+44.424.075/0001-75;Empresa 62 Comércio e Serviços LTDA;Rua Mateus Leme;8789;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
+18.448.399/0001-33;Empresa 63 Comércio e Serviços LTDA;Avenida Iguaçu;2979;80230-020;Água Verde;luankaseckert@gmail.com;(41) 8887-5384
+62.005.267/0001-29;Empresa 64 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;3602;80010-100;Centro;luankasetima@gmail.com;(41) 8887-5384
+69.917.910/0001-30;Empresa 65 Comércio e Serviços LTDA;Rua General Carneiro;629;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
+11.084.653/0001-12;Empresa 66 Comércio e Serviços LTDA;Avenida Iguaçu;1177;80230-020;Água Verde;luankasetima@gmail.com;(41) 8887-5384
+80.709.776/0001-14;Empresa 67 Comércio e Serviços LTDA;Rua Comendador Araújo;286;80420-000;Centro;luankaseckert@gmail.com;(41) 9749-4298
+84.327.697/0001-08;Empresa 68 Comércio e Serviços LTDA;Rua Emiliano Perneta;5094;80420-080;Centro;luankasetima@gmail.com;(41) 8887-5384
+83.770.356/0001-31;Empresa 69 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;3227;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 9749-4298
+17.203.480/0001-90;Empresa 70 Comércio e Serviços LTDA;Rua Comendador Araújo;1838;80420-000;Centro;luankasetima@gmail.com;(41) 9749-4298
+17.772.670/0001-29;Empresa 71 Comércio e Serviços LTDA;Rua Comendador Araújo;4505;80420-000;Centro;luankaseckert@gmail.com;(41) 9749-4298
+42.093.022/0001-93;Empresa 72 Comércio e Serviços LTDA;Rua Emiliano Perneta;4438;80420-080;Centro;luankasetima@gmail.com;(41) 9749-4298
+89.947.528/0001-86;Empresa 73 Comércio e Serviços LTDA;Rua Mateus Leme;5995;80510-190;São Francisco;luankaseckert@gmail.com;(41) 9749-4298
+45.251.004/0001-80;Empresa 74 Comércio e Serviços LTDA;Rua Emiliano Perneta;6721;80420-080;Centro;luankasetima@gmail.com;(41) 8887-5384
+67.759.406/0001-23;Empresa 75 Comércio e Serviços LTDA;Rua General Carneiro;3364;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
+20.076.926/0001-78;Empresa 76 Comércio e Serviços LTDA;Rua Augusto Stresser;1579;80260-000;Juvevê;luankasetima@gmail.com;(41) 8887-5384
+17.471.143/0001-84;Empresa 77 Comércio e Serviços LTDA;Rua Augusto Stresser;372;80260-000;Juvevê;luankaseckert@gmail.com;(41) 9749-4298
+01.206.874/0001-62;Empresa 78 Comércio e Serviços LTDA;Rua General Carneiro;60;80060-150;Alto da Glória;luankasetima@gmail.com;(41) 9749-4298
+41.851.851/0001-25;Empresa 79 Comércio e Serviços LTDA;Rua Mateus Leme;3547;80510-190;São Francisco;luankaseckert@gmail.com;(41) 9749-4298
+56.406.784/0001-07;Empresa 80 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;3270;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298
+79.377.482/0001-53;Empresa 81 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;6312;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
+28.850.301/0001-23;Empresa 82 Comércio e Serviços LTDA;Avenida República Argentina;4424;80620-010;Portão;luankasetima@gmail.com;(41) 8887-5384
+57.325.553/0001-31;Empresa 83 Comércio e Serviços LTDA;Rua Emiliano Perneta;6847;80420-080;Centro;luankaseckert@gmail.com;(41) 8887-5384
+78.242.121/0001-37;Empresa 84 Comércio e Serviços LTDA;Rua Mateus Leme;3581;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
+10.391.839/0001-51;Empresa 85 Comércio e Serviços LTDA;Rua Marechal Deodoro;5691;80010-010;Centro;luankaseckert@gmail.com;(41) 9749-4298
+23.788.178/0001-44;Empresa 86 Comércio e Serviços LTDA;Rua Mateus Leme;4308;80510-190;São Francisco;luankasetima@gmail.com;(41) 8887-5384
+89.560.017/0001-07;Empresa 87 Comércio e Serviços LTDA;Rua Marechal Deodoro;4305;80010-010;Centro;luankaseckert@gmail.com;(41) 8887-5384
+99.399.768/0001-47;Empresa 88 Comércio e Serviços LTDA;Avenida Iguaçu;1021;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
+23.879.937/0001-84;Empresa 89 Comércio e Serviços LTDA;Avenida República Argentina;8479;80620-010;Portão;luankaseckert@gmail.com;(41) 9749-4298
+51.518.558/0001-02;Empresa 90 Comércio e Serviços LTDA;Rua Marechal Deodoro;8847;80010-010;Centro;luankasetima@gmail.com;(41) 9749-4298
+49.438.974/0001-40;Empresa 91 Comércio e Serviços LTDA;Rua General Carneiro;2700;80060-150;Alto da Glória;luankaseckert@gmail.com;(41) 8887-5384
+98.829.840/0001-66;Empresa 92 Comércio e Serviços LTDA;Rua Emiliano Perneta;242;80420-080;Centro;luankasetima@gmail.com;(41) 8887-5384
+39.568.472/0001-80;Empresa 93 Comércio e Serviços LTDA;Rua Professor Pedro Viriato Parigot de Souza;4280;81200-100;Mossunguê;luankaseckert@gmail.com;(41) 9749-4298
+77.144.765/0001-20;Empresa 94 Comércio e Serviços LTDA;Rua Mateus Leme;6014;80510-190;São Francisco;luankasetima@gmail.com;(41) 9749-4298
+20.791.970/0001-60;Empresa 95 Comércio e Serviços LTDA;Rua Emiliano Perneta;3125;80420-080;Centro;luankaseckert@gmail.com;(41) 8887-5384
+06.360.107/0001-27;Empresa 96 Comércio e Serviços LTDA;Rua Augusto Stresser;3815;80260-000;Juvevê;luankasetima@gmail.com;(41) 9749-4298
+55.446.849/0001-85;Empresa 97 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;7023;80010-100;Centro;luankaseckert@gmail.com;(41) 9749-4298
+09.932.968/0001-20;Empresa 98 Comércio e Serviços LTDA;Avenida Iguaçu;2319;80230-020;Água Verde;luankasetima@gmail.com;(41) 9749-4298
+54.505.849/0001-46;Empresa 99 Comércio e Serviços LTDA;Rua Augusto Stresser;923;80260-000;Juvevê;luankaseckert@gmail.com;(41) 8887-5384
+40.468.944/0001-02;Empresa 100 Comércio e Serviços LTDA;Avenida Visconde de Guarapuava;425;80010-100;Centro;luankasetima@gmail.com;(41) 9749-4298

@@ -1,9 +1,80 @@
-<html lang="pt-br">
+import tkinter as tk
+from tkinter import messagebox, filedialog
+import random
+from weasyprint import HTML
 
-<head>
+# Lista de endereços com seus respectivos dados
+ENDERECOS = [
+    {"rua": "Rua Marechal Deodoro", "cep": "80010-010", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Avenida Visconde de Guarapuava", "cep": "80010-100", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Rua Comendador Araújo", "cep": "80420-000", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Rua Emiliano Perneta", "cep": "80420-080", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Rua Mateus Leme", "cep": "80510-190", "bairro": "São Francisco", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Avenida Iguaçu", "cep": "80230-020", "bairro": "Água Verde", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Rua Augusto Stresser", "cep": "80260-000", "bairro": "Juvevê", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Rua Professor Pedro Viriato Parigot de Souza", "cep": "81200-100", "bairro": "Mossunguê", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Rua General Carneiro", "cep": "80060-150", "bairro": "Alto da Glória", "estado": "PR", "cidade": "Curitiba"},
+    {"rua": "Avenida República Argentina", "cep": "80620-010", "bairro": "Portão", "estado": "PR", "cidade": "Curitiba"}
+]
 
+# Lista de telefones válidos para aleatorizar
+TELEFONES = ["(41) 8887-5384", "(41) 9749-4298"]
 
+# Lista de emails pré-definidos
+EMAILS = ["luankaseckert@gmail.com", "luankasetima@gmail.com"]
 
+# Lista global para armazenar as razões sociais carregadas do arquivo
+razoes_sociais = []
+
+def calcular_digitos(cnpj_base):
+    pesos_primeiro = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2]
+    pesos_segundo = [6] + pesos_primeiro
+
+    soma = sum(int(cnpj_base[i]) * pesos_primeiro[i] for i in range(12))
+    primeiro_digito = 11 - (soma % 11)
+    primeiro_digito = primeiro_digito if primeiro_digito < 10 else 0
+
+    cnpj_base += str(primeiro_digito)
+    soma = sum(int(cnpj_base[i]) * pesos_segundo[i] for i in range(13))
+    segundo_digito = 11 - (soma % 11)
+    segundo_digito = segundo_digito if segundo_digito < 10 else 0
+
+    return f"{primeiro_digito}{segundo_digito}"
+
+def gerar_cnpj():
+    cnpj_base = ''.join([str(random.randint(0, 9)) for _ in range(8)]) + "0001"
+    digitos = calcular_digitos(cnpj_base)
+    return f"{cnpj_base[:2]}.{cnpj_base[2:5]}.{cnpj_base[5:8]}/{cnpj_base[8:12]}-{digitos}"
+
+def carregar_razoes_sociais():
+    global razoes_sociais
+    file_path = filedialog.askopenfilename(
+        title="Selecione o arquivo de razões sociais",
+        filetypes=[("Text Files", "*.txt"), ("All Files", "*.*")]
+    )
+    if file_path:
+        try:
+            with open(file_path, "r", encoding="utf-8") as file:
+                conteudo = file.read()
+                razoes_sociais = [razao.strip() for razao in conteudo.split(";") if razao.strip()]
+            messagebox.showinfo("Sucesso", f"Razões sociais carregadas: {len(razoes_sociais)}")
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao carregar o arquivo: {e}")
+
+def gerar_dados_html():
+    if not razoes_sociais:
+        messagebox.showerror("Erro", "Nenhuma razão social carregada. Carregue um arquivo primeiro.")
+        return
+
+    for i, razao in enumerate(razoes_sociais):
+        cnpj = gerar_cnpj()
+        endereco = random.choice(ENDERECOS)
+        telefone = random.choice(TELEFONES)
+        email = EMAILS[i % len(EMAILS)]
+        numero = random.randint(1, 9999)
+
+        html_content = f"""
+<html>
 </head>
 
 
@@ -113,7 +184,7 @@
                                   <br>
 
                                   <font face="Arial" style="font-size: 8pt">
-                                    <b>61.570.924/0001-18</b><br>
+                                    <b>47.113.767/0001-90</b><br>
                                     <b>MATRIZ</b>
                                   </font>
 
@@ -497,7 +568,7 @@
                                   <br>
 
                                   <font face="Arial" style="font-size: 8pt">
-                                    <b> ROD BR-116 </b>
+                                    <b> {endereco['rua']} </b>
                                   </font>
 
                                   <br>
@@ -521,7 +592,7 @@
                                   <br>
 
                                   <font face="Arial" style="font-size: 8pt">
-                                    <b>15480 </b>
+                                    <b> {numero} </b>
                                   </font>
 
                                   <br>
@@ -586,7 +657,7 @@
                                   <br>
 
                                   <font face="Arial" style="font-size: 8pt">
-                                    <b> 81.690-200 </b>
+                                    <b> {endereco['cep']} </b>
                                   </font>
 
                                   <br>
@@ -609,7 +680,7 @@
                                   <br>
 
                                   <font face="Arial" style="font-size: 8pt">
-                                    <b>XAXIM </b>
+                                    <b> {endereco['bairro']} </b>
                                   </font>
 
                                   <br>
@@ -695,7 +766,7 @@
                                   <br>
 
                                   <font face="Arial" style="font-size: 8pt">
-                                    <b> IRANIR-SILVA@OUTLOOK.COM </b>
+                                    <b> {email} </b>
                                   </font>
 
                                   <br>
@@ -718,7 +789,7 @@
                                   <br>
 
                                   <font face="Arial" style="font-size: 8pt">
-                                    <b>(41) 9749-4298</b>
+                                    <b> {telefone} </b>
                                   </font>
 
                                   <br>
@@ -936,3 +1007,34 @@
                   <br>
 </body>
 </html>
+        """
+        salvar_pdf(html_content, razao)
+
+def salvar_pdf(html_content, razao):
+    file_path = filedialog.asksaveasfilename(
+        defaultextension=".pdf",
+        filetypes=[("PDF Files", "*.pdf"), ("All Files", "*.*")],
+        initialfile=f"{razao}.pdf"
+    )
+    if file_path:
+        try:
+            HTML(string=html_content, base_url=".").write_pdf(file_path)
+            messagebox.showinfo("Sucesso", f"PDF salvo em {file_path}")
+        except Exception as e:
+            messagebox.showerror("Erro", f"Erro ao salvar o PDF: {e}")
+
+# Interface gráfica
+root = tk.Tk()
+root.title("Gerador de PDFs")
+root.geometry("500x400")
+
+label_titulo = tk.Label(root, text="Gerador de PDFs com HTML", font=("Helvetica", 16, "bold"))
+label_titulo.pack(pady=10)
+
+button_carregar_razoes = tk.Button(root, text="Carregar Razões Sociais", command=carregar_razoes_sociais, width=30)
+button_carregar_razoes.pack(pady=10)
+
+button_gerar = tk.Button(root, text="Gerar PDFs", command=gerar_dados_html, width=30)
+button_gerar.pack(pady=10)
+
+root.mainloop()
