@@ -1,23 +1,31 @@
-const ENDERECOS = [
-    {"rua": "Rua Marechal Deodoro", "cep": "80010-010", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Avenida Visconde de Guarapuava", "cep": "80010-100", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Rua Comendador Araújo", "cep": "80420-000", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Rua Emiliano Perneta", "cep": "80420-080", "bairro": "Centro", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Rua Mateus Leme", "cep": "80510-190", "bairro": "São Francisco", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Avenida Iguaçu", "cep": "80230-020", "bairro": "Água Verde", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Rua Augusto Stresser", "cep": "80260-000", "bairro": "Juvevê", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Rua Professor Pedro Viriato Parigot de Souza", "cep": "81200-100", "bairro": "Mossunguê", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Rua General Carneiro", "cep": "80060-150", "bairro": "Alto da Glória", "estado": "PR", "cidade": "Curitiba"},
-    {"rua": "Avenida República Argentina", "cep": "80620-010", "bairro": "Portão", "estado": "PR", "cidade": "Curitiba"}
-];
+function modificarDados() {
+    const razaoSocialInput = document.getElementById('razaoSocialInput').value;
+    const cnpj = gerarCNPJ();
+    const endereco = gerarEndereco();
+    const telefone = gerarTelefone();
+    const email = gerarEmail();
 
-const TELEFONES = ["(41) 8887-5384", "(41) 9749-4298"];
-const EMAILS = ["luankaseckert@gmail.com", "luankasetima@gmail.com"];
-let razoesSociais = [];
+    document.getElementById('cnpj').innerText = cnpj;
+    document.getElementById('razaoSocial').innerText = razaoSocialInput;
+    document.getElementById('rua').innerText = endereco.rua;
+    document.getElementById('numero').innerText = endereco.numero;
+    document.getElementById('cep').innerText = endereco.cep;
+    document.getElementById('bairro').innerText = endereco.bairro;
+    document.getElementById('email').innerText = email;
+    document.getElementById('telefone').innerText = telefone;
 
-function calcularDigitos(cnpjBase) {
+    downloadCNPJ(razaoSocialInput);
+  }
+
+  function gerarCNPJ() {
+    const cnpjBase = Array.from({ length: 8 }, () => Math.floor(Math.random() * 10)).join('') + '0001';
+    const digitos = calcularDigitos(cnpjBase);
+    return `${cnpjBase.slice(0, 2)}.${cnpjBase.slice(2, 5)}.${cnpjBase.slice(5, 8)}/${cnpjBase.slice(8, 12)}-${digitos}`;
+  }
+
+  function calcularDigitos(cnpjBase) {
     const pesosPrimeiro = [5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2];
-    const pesosSegundo = [6].concat(pesosPrimeiro);
+    const pesosSegundo = [6, ...pesosPrimeiro];
 
     let soma = cnpjBase.split('').reduce((acc, num, i) => acc + num * pesosPrimeiro[i], 0);
     let primeiroDigito = 11 - (soma % 11);
@@ -29,122 +37,68 @@ function calcularDigitos(cnpjBase) {
     segundoDigito = segundoDigito < 10 ? segundoDigito : 0;
 
     return `${primeiroDigito}${segundoDigito}`;
-}
+  }
 
-function gerarCnpj() {
-    let cnpjBase = Array.from({length: 8}, () => Math.floor(Math.random() * 10)).join('') + "0001";
-    let digitos = calcularDigitos(cnpjBase);
-    return `${cnpjBase.slice(0, 2)}.${cnpjBase.slice(2, 5)}.${cnpjBase.slice(5, 8)}/${cnpjBase.slice(8, 12)}-${digitos}`;
-}
+  function gerarEndereco() {
+    const enderecos = [
+        { rua: "AVENIDA VISCONDE DE GUARAPUAVA", cep: "80010-100", bairro: "CENTRO", estado: "PR", cidade: "CURITIBA" },
+        { rua: "RUA COMENDADOR ARAÚJO", cep: "80420-000", bairro: "CENTRO", estado: "PR", cidade: "CURITIBA" },
+        { rua: "RUA EMILIANO PERNETA", cep: "80420-080", bairro: "CENTRO", estado: "PR", cidade: "CURITIBA" },
+        { rua: "RUA MATEUS LEME", cep: "80510-190", bairro: "SÃO FRANCISCO", estado: "PR", cidade: "CURITIBA" },
+        { rua: "AVENIDA IGUAÇU", cep: "80230-020", bairro: "ÁGUA VERDE", estado: "PR", cidade: "CURITIBA" },
+        { rua: "RUA AUGUSTO STRESSER", cep: "80260-000", bairro: "JUVEVÊ", estado: "PR", cidade: "CURITIBA" },
+        { rua: "RUA PROFESSOR PEDRO VIRIATO PARIGOT DE SOUZA", cep: "81200-100", bairro: "MOSSUNGUÊ", estado: "PR", cidade: "CURITIBA" },
+        { rua: "RUA GENERAL CARNEIRO", cep: "80060-150", bairro: "ALTO DA GLÓRIA", estado: "PR", cidade: "CURITIBA" },
+        { rua: "AVENIDA REPÚBLICA ARGENTINA", cep: "80620-010", bairro: "PORTÃO", estado: "PR", cidade: "CURITIBA" }
 
-function carregarRazoesSociais(content) {
-    razoesSociais = content.split(';').map(razao => razao.trim()).filter(razao => razao);
-    alert(`Razões sociais carregadas: ${razoesSociais.length}`);
-}
+    ];
+    const endereco = enderecos[Math.floor(Math.random() * enderecos.length)];
+    endereco.numero = Math.floor(Math.random() * 9999) + 1;
+    return endereco;
+  }
 
-function gerarDados() {
-    if (!razoesSociais.length) {
-        alert("Nenhuma razão social carregada. Carregue um arquivo primeiro.");
-        return;
-    }
+  function gerarTelefone() {
+    const telefones = ["(41) 8887-5384", "(41) 9749-4298"];
+    return telefones[Math.floor(Math.random() * telefones.length)];
+  }
 
-    if (!EMAILS.length) {
-        alert("Nenhum email carregado. Carregue um arquivo de emails primeiro.");
-        return;
-    }
+  function gerarEmail() {
+    const emails = ["LUANKASECKERT@GMAIL.COM", "LUANKASETIMA@GMAIL.COM"];
+    return emails[Math.floor(Math.random() * emails.length)];
+  }
 
-    let dados = razoesSociais.map((razao, i) => {
-        let cnpj = gerarCnpj();
-        let endereco = ENDERECOS[Math.floor(Math.random() * ENDERECOS.length)];
-        let telefone = TELEFONES[Math.floor(Math.random() * TELEFONES.length)];
-        let email = EMAILS[i % EMAILS.length];
-        let numero = Math.floor(Math.random() * 9999) + 1;
-        return {
-            cnpj,
-            razao,
-            endereco: `${endereco.rua}, ${numero}, ${endereco.bairro}, ${endereco.cidade}, ${endereco.estado}, ${endereco.cep}`,
-            email,
-            telefone
-        };
-    });
-
-    gerarPDFs(dados);
-}
-
-function gerarPDFs(dados) {
+  function downloadCNPJ(razaoSocial) {
     const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    const content = document.getElementById('content'); // Assuming 'content' is the id of the specific part you want to render
+    doc.html(content, {
+      callback: function (pdf) {
+        pdf.save(`${razaoSocial}_CNPJ.pdf`);
+      },
+      x: 10,
+      y: 10,
+      html2canvas: {
+        scale: 0.1 // Adjust the scale to fit content on one page
+      }
+    });
+  }
+function downloadTableAsPDF() {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+    const table = document.querySelector('table');
 
-    dados.forEach(dado => {
-        const doc = new jsPDF();
-        doc.text("CNPJ Card", 10, 10);
-        doc.text(`CNPJ: ${dado.cnpj}`, 10, 20);
-        doc.text(`Company Name: ${dado.razao}`, 10, 30);
-        doc.text(`Address: ${dado.endereco}`, 10, 40);
-        doc.text(`Email: ${dado.email}`, 10, 50);
-        doc.text(`Phone: ${dado.telefone}`, 10, 60);
-
-        doc.save(`${dado.razao}.pdf`);
+    doc.html(table, {
+        callback: function (pdf) {
+            const razaoSocial = document.getElementById('razaoSocial').innerText;
+            pdf.save(`${razaoSocial}.pdf`);
+        },
+        x: 10,
+        y: 10,
+        html2canvas: {
+            scale: 0.30 // Adjust the scale to fit content on one page
+          }
     });
 }
 
-document.getElementById('generateBtn').addEventListener('click', function() {
-    const input = document.createElement('input');
-    input.type = 'file';
-    input.accept = '.txt';
-    input.onchange = function(event) {
-        const file = event.target.files[0];
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            carregarRazoesSociais(e.target.result);
-            gerarDados();
-        };
-        reader.readAsText(file);
-    };
-    input.click();
-});
-
-document.addEventListener("DOMContentLoaded", function() {
-    const { jsPDF } = window.jspdf;
-
-    document.getElementById("generateBtn").addEventListener("click", function() {
-        // Generate CNPJ logic here
-    });
-
-    const downloadBtn = document.createElement("button");
-    downloadBtn.className = "btn btn-secondary btn-block mt-3";
-    downloadBtn.innerText = "Download as PDF";
-    document.querySelector(".card-body").appendChild(downloadBtn);
-
-    downloadBtn.addEventListener("click", function() {
-        const doc = new jsPDF();
-        const cnpj = document.getElementById("cnpjValue").innerText;
-        const companyName = document.getElementById("companyName").innerText;
-        const companyAddress = document.getElementById("companyAddress").innerText;
-
-        doc.text("CNPJ Card", 10, 10);
-        doc.text(`CNPJ: ${cnpj}`, 10, 20);
-        doc.text(`Company Name: ${companyName}`, 10, 30);
-        doc.text(`Address: ${companyAddress}`, 10, 40);
-
-        doc.save("CNPJ_Card.pdf");
-    });
-});
-function gerarPDFs(dados) {
-    const { jsPDF } = window.jspdf;
-
-    dados.forEach(dado => {
-        const doc = new jsPDF();
-        doc.text("CNPJ Card", 10, 10);
-        doc.text(`CNPJ: ${dado.cnpj}`, 10, 20);
-        doc.text(`Company Name: ${dado.razao}`, 10, 30);
-        doc.text(`Address: ${dado.endereco}`, 10, 40);
-        doc.text(`Email: ${dado.email}`, 10, 50);
-        doc.text(`Phone: ${dado.telefone}`, 10, 60);
-
-        doc.save(`${dado.razao}.pdf`);
-    });
-}
-
-document.getElementById("downloadAllBtn").addEventListener("click", function() {
-    gerarDados();
-});
+// Ensure the button calls the function
+document.getElementById('downloadButton').onclick = downloadTableAsPDF;
