@@ -1,4 +1,5 @@
 
 app/dist.zip
-/app
+/app/node_modules
+/app/dist
 /node_modules

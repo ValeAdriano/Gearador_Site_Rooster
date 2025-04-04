@@ -1,0 +1,689 @@
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNPJ Generator</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" href="assets/icon.ico" type="image/x-icon">
+</head>
+  
+<style>
+  *{
+    margin: 0;
+  }
+
+  body{
+    background-color: #1B263B;
+    overflow-x: hidden;
+  }
+
+      /* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0D1B2A;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #415A77;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #415A77;
+}
+</style>
+
+<body class="vsc-initialized">
+
+    <header class="p-3 text-white" style="background-color: #0D1B2A; display: flex;">
+
+        <img src="assets/galo2.png" style="height: 70px; border-radius: 10px; margin-right: 10px;" alt="">
+        <h1 style="overflow: hidden;">Rooster Company</h1>
+      </header>
+
+  <div id="esg_atica"></div>
+  <div id="app" >
+  <div class="container content-wrapper"></div>
+      <div class="conteudo">
+        <div class="row">
+          <div class="col-md-12 content">
+            <div class="row">
+              <div class="col-md-12">
+                <div id="principal" style="display: flex;">
+
+                  
+                  <div class="card mx-auto" style="width: 18rem; margin: 20px auto; border: 1px solid #ccc; padding: 20px; border-radius: 10px; height: fit-content;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Gerador de CNPJ</h5>
+                      <form id="cnpjForm" oninput="validateForm()">
+                        <div class="form-group">
+                          <label for="razaoSocialInput">Razão Social</label>
+                          <input type="text" class="form-control text-uppercase" id="razaoSocialInput" placeholder="Digite a razão social..." style="text-transform: uppercase;" required>
+                        </div>
+                      
+                        <div class="form-group">
+                          <label for="selectItem">Selecione um item</label>
+                          <select class="form-control" id="selectItem" required>
+                            <option value="">Selecione</option>
+                            <option value="0">Consultoria 1</option>
+                            <option value="7">Consultoria 2</option>
+                            <option value="8">Consultoria 3</option>
+                            <option value="1">PetShop</option>
+                            <option value="2">Cafeteria</option>
+                            <option value="3">Informática</option>
+                            <option value="4">Mecânica</option>
+                            <option value="5">Posto</option>
+                            <option value="6">Doceria</option>
+                            <option value="9">Desenvolvimento</option>
+                            <option value="10">Consulta CNPJ</option>
+                            <option value="11">Consulta Energia</option>
+                          </select>
+                        </div>
+                      
+                        <div class="form-group" hidden="true">
+                          <label for="dominio">Domínio</label>
+                          <input type="text" class="form-control" id="dominio" placeholder="Digite o domínio..." hidden="true">
+                        </div>
+
+                        <div class="form-group">
+                          <label for="telefone">Número de Telefone</label>
+                          <input type="text" class="form-control" id="telefoneInput" placeholder="Digite o telefone..." required>
+                        </div>
+                      
+                        <div class="form-group">
+                          <label for="imageLink1">Link da Imagem 1</label>
+                          <input type="text" class="form-control" id="imageLink1" placeholder="Link da imagem 1..." required>
+                        </div>
+                      
+                        <div class="form-group">
+                          <label for="imageLink2">Link da Imagem 2</label>
+                          <input type="text" class="form-control" id="imageLink2" placeholder="Link da imagem 2..." required>
+                        </div>
+                        
+                        <div class="form-group">
+                          <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                              </svg>
+                            </button>
+
+ 
+                        </div>
+
+
+                        <div class="d-flex justify-content-between" style="margin-top: 10px;">
+                          <button type="button" class="btn btn-outline-primary" id="generateButton" onclick="modificarDados()" disabled>Gerar</button>
+                          <button type="button" class="btn btn-primary" id="downloadButton" onclick="downloadTableAsPDF()" disabled>Baixar</button>
+                        </div>
+                      </form>
+                      
+                    </div>
+                    </div>
+                    <div class="card mx-auto" style="width: auto; margin: 20px auto; border: 1px solid #ccc; border-radius: 10px; height: fit-content;">
+                      <div class="card-body">
+                        <div id="docTotal">
+
+                        <table border="1" cellspacing="0" style="width:17cm;	line-height: 9pt; margin: auto; margin-top: 20px; background-color: #f5f5f5;" >
+                          <tbody>
+                            <tr>
+                              <td style="border:solid windowtext .5pt; padding:5.65pt 5.65pt 5.65pt 5.65pt">
+                                <table border="0" width="100%" style="line-height: 9pt; ">
+                                  <tbody> 
+                                    <tr>
+                                      <td valign="middle" align="left" width="60" height="60">
+                                        <img width="60" height="60" src="assets/brasao.png" alt="Brasão" border="0">
+                                      </td>
+                                      <td align="center">
+                                        <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                        <font face="Arial" size="4">
+                                          <b>
+                                            REPÚBLICA FEDERATIVA DO BRASIL
+                                          </b>
+                                        </font>
+                                        <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                        <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                        <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                        <font face="Arial">
+                                          <b>
+                                            CADASTRO NACIONAL DA PESSOA JURÍDICA
+                                          </b>
+                                        </font>
+                                        <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                      </td>
+                                      <td valign="middle" align="left" width="60" height="60"></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="24%" valign="top" border="1" style="border-right: windowtext 0.5pt solid; border-top: windowtext 0.5pt solid; border-left: windowtext 0.5pt solid; border-bottom: windowtext 0.5pt solid; padding-left: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          NÚMERO DE INSCRIÇÃO
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="cnpj">47.113.767/0001-90</b><br>
+                                          <b>MATRIZ</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="52%" valign="center" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <center>
+                                          <font face="Arial" style="font-size: 10pt">
+                                            <b>
+                                              COMPROVANTE DE INSCRIÇÃO E DE SITUAÇÃO CADASTRAL
+                                            </b>
+                                          </font>
+                                        </center>
+                                      </td>
+                                      <td width="24%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt;padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          DATA DE ABERTURA
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b>12/07/2022</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="100%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          NOME EMPRESARIAL
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="razaoSocial">47.113.767 IRANIR ANDRADE DA SILVA </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse; ">
+                                  <tbody>
+                                    <tr>
+                                      <td width="88%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          TÍTULO DO ESTABELECIMENTO (NOME DE FANTASIA)
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> ********</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="10%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          PORTE
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b>ME</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="100%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          CÓDIGO E DESCRIÇÃO DA ATIVIDADE ECONÔMICA PRINCIPAL
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="cnae"> 47.13-0-02 - Lojas de variedades, exceto lojas de departamentos ou magazines</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="100%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+      
+                                        <font face="Arial" style="font-size: 6pt">
+                                          CÓDIGO E DESCRIÇÃO DAS ATIVIDADES ECONÔMICAS SECUNDÁRIAS
+                                        </font>
+                                        <br>
+      
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b>Não informada</b>
+                                        </font>
+                                        <br>
+      
+                                        <!-- <font face="Arial" style="font-size: 8pt">
+                                          <b> 47.89-0-99 - Comércio varejista de outros produtos não especificados
+                                            anteriormente</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 25.99-3-99 - Fabricação de outros produtos de metal não especificados
+                                            anteriormente</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 23.91-5-03 - Aparelhamento de placas e execução de trabalhos em mármore,
+                                            granito, ardósia e outras pedras</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 47.59-8-01 - Comércio varejista de artigos de tapeçaria, cortinas e
+                                            persianas</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 47.55-5-03 - Comercio varejista de artigos de cama, mesa e banho</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 23.49-4-99 - Fabricação de produtos cerâmicos não-refratários não especificados
+                                            anteriormente</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 47.54-7-03 - Comércio varejista de artigos de iluminação</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 17.49-4-00 - Fabricação de produtos de pastas celulósicas, papel, cartolina,
+                                            papel-cartão e papelão ondulado não especificados anteriormente</b>
+                                        </font>
+                                        <br>
+      
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> 23.99-1-01 - Decoração, lapidação, gravação, vitrificação e outros trabalhos em
+                                            cerâmica, louça, vidro e cristal</b>
+                                        </font>
+                                        <br> -->
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="100%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          CÓDIGO E DESCRIÇÃO DA NATUREZA JURÍDICA
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b>213-5 - Empresário (Individual) </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="50%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          LOGRADOURO
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="rua"> ROD BR-116 </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="10%" valign="top" style="	BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; 	BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          NÚMERO
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="numero">15480 </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="36%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; 	BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          COMPLEMENTO
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b>BLOCO 3 B APTO 901 </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="18%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          CEP
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="cep"> 81.690-200 </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="30%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; 	BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          BAIRRO/DISTRITO
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="bairro">XAXIM </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="38%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; 	BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          MUNICÍPIO
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="cidade">CURITIBA </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="10%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; 	BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          UF
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="estado">PR</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="50%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          ENDEREÇO ELETRÔNICO
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="email"> IRANIR-SILVA@OUTLOOK.COM </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="48%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; 	BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          TELEFONE
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b id="telefone">(41) 9523-6635</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+      
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+      
+                                  <tbody>
+                                    <tr>
+      
+                                      <td width="100%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+      
+                                        <font face="Arial" style="font-size: 6pt">
+                                          ENTE FEDERATIVO RESPONSÁVEL (EFR)
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b>
+                                            *****
+                                          </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+      
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="64%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+      
+                                        <font face="Arial" style="font-size: 6pt">
+                                          SITUAÇÃO CADASTRAL
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> ATIVA </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+      
+                                      <td width="24%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; 	BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          DATA DA SITUAÇÃO CADASTRAL
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b>12/07/2022</b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="31%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          MOTIVO DE SITUAÇÃO CADASTRAL
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                <p style="margin:0cm; margin-bottom:0pt;">&nbsp;</p>
+                                <table border="0" width="100%" style="BORDER-COLLAPSE: collapse;">
+                                  <tbody>
+                                    <tr>
+                                      <td width="64%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          SITUAÇÃO ESPECIAL
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> ******** </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                      <td width="2%" border="0" style="BORDER-RIGHT: windowtext 0.5pt solid;"> </td>
+                                      <td width="24%" valign="top" style="BORDER-RIGHT: windowtext 0.5pt solid; BORDER-TOP: windowtext 0.5pt solid; BORDER-LEFT: medium none; BORDER-BOTTOM: windowtext 0.5pt solid; PADDING-LEFT: 3.5pt; padding-bottom: 3.5pt;">
+                                        <font face="Arial" style="font-size: 6pt">
+                                          DATA DA SITUAÇÃO ESPECIAL
+                                        </font>
+                                        <br>
+                                        <font face="Arial" style="font-size: 8pt">
+                                          <b> ******** </b>
+                                        </font>
+                                        <br>
+                                      </td>
+                                    </tr>
+                                  </tbody>  
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <br>
+
+                        <p>
+                        <font face="Arial" size="2">
+                        Aprovado pela Instrução Normativa RFB nº 2.119, de 06 de dezembro de 2022.
+                        </font>
+                        </p>
+                        
+                        <table border="0" cellspacing="0" style="width:17cm;	line-height: 6pt;">
+                          <tr>
+                            <td align="left">
+                            <p><font face="Arial" size="2">Emitido no dia <b id="currentDate"></b> às <b id="currentTime"></b> (data e hora de Brasília). </font></p>
+
+                            <p id="currentDateTime"><font face="Arial" size="2"></font></p>
+                            </td>
+                            
+                            <td align="right">
+                            <p><font face="Arial" size="2">Página: <b>1/1</b></font></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </div>
+                      </div>
+                      </div>
+
+                  <br>
+
+
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3  text-white w-100" style="background-color: #0D1B2A; padding: 15px; margin-top: 100; position: absolute; bottom: -100; left: 0;">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-primary text-decoration-none lh-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-feather" viewBox="0 0 16 16">
+                <path d="M15.807.531c-.174-.177-.41-.289-.64-.363a3.8 3.8 0 0 0-.833-.15c-.62-.049-1.394 0-2.252.175C10.365.545 8.264 1.415 6.315 3.1S3.147 6.824 2.557 8.523c-.294.847-.44 1.634-.429 2.268.005.316.05.62.154.88q.025.061.056.122A68 68 0 0 0 .08 15.198a.53.53 0 0 0 .157.72.504.504 0 0 0 .705-.16 68 68 0 0 1 2.158-3.26c.285.141.616.195.958.182.513-.02 1.098-.188 1.723-.49 1.25-.605 2.744-1.787 4.303-3.642l1.518-1.55a.53.53 0 0 0 0-.739l-.729-.744 1.311.209a.5.5 0 0 0 .443-.15l.663-.684c.663-.68 1.292-1.325 1.763-1.892.314-.378.585-.752.754-1.107.163-.345.278-.773.112-1.188a.5.5 0 0 0-.112-.172M3.733 11.62C5.385 9.374 7.24 7.215 9.309 5.394l1.21 1.234-1.171 1.196-.027.03c-1.5 1.789-2.891 2.867-3.977 3.393-.544.263-.99.378-1.324.39a1.3 1.3 0 0 1-.287-.018Zm6.769-7.22c1.31-1.028 2.7-1.914 4.172-2.6a7 7 0 0 1-.4.523c-.442.533-1.028 1.134-1.681 1.804l-.51.524zm3.346-3.357C9.594 3.147 6.045 6.8 3.149 10.678c.007-.464.121-1.086.37-1.806.533-1.535 1.65-3.415 3.455-4.976 1.807-1.561 3.746-2.36 5.31-2.68a8 8 0 0 1 1.564-.173"/>
+              </svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-primary">2024 Rooster Company&copy;</span>
+    </div>
+
+    <ul class=" col-md-4 justify-content-end list-unstyled d-flex" style="overflow: hidden;">
+        <li class="ms-3" style="overflow: hidden;"><a class="text-primary" href="https://www.linkedin.com/company/roostercompany/" target="_blank"><i class="bi bi-linkedin" style="font-size: 24px;"></i></a></li>
+    </ul>
+</footer>
+
+
+                           <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Lista de Telefones</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <table class="table">
+                                      <thead>
+                                      <tr>
+                                        <th scope="col">Telefone</th>
+                                        <th scope="col">Nome</th>
+                                      </tr>
+                                      </thead>
+                                      <tbody>
+                                      <tr>
+                                        <td>(41) 9157-4642</td>
+                                        <td>GUI</td>
+                                      </tr>
+                                      <tr>
+                                        <td>(41) 9532-7018</td>
+                                        <td>RAFA</td>
+                                      </tr>
+                                      <tr>
+                                        <td>(41) 9928-8372</td>
+                                        <td>GALO</td>
+                                      </tr>
+                                      <tr>
+                                        <td>(41) 9202-1603</td>
+                                        <td>ADRIANO</td>
+                                      </tr>
+                                      <tr>
+                                        <td>(41) 9587-5615</td>
+                                        <td>BATEL</td>
+                                      </tr>
+                                      <tr>
+                                        <td>(41) 9674-3367</td>
+                                        <td>FELIPAO</td>
+                                      </tr>
+                                      <tr>
+                                        <td>(41) 8887-5384</td>
+                                        <td>LUAN</td>
+                                      </tr>
+                                      <tr>
+                                        <td>(41) 9749-4298</td>
+                                        <td>GABRIEL</td>
+                                      </tr>
+                                      </tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                  <script src="assets/app.js" defer></script>
+                  <script src="assets/templates.js" defer></script>
+                  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+                  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+                  <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-o/xDmnA0EybJHt2j9hbdQWUIe6rX8zwDfBjyRC7W9HCsyGKP6H2BlI5RTP15s7KJ" crossorigin="anonymous"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+                  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+                  
+</body>
+</html>
